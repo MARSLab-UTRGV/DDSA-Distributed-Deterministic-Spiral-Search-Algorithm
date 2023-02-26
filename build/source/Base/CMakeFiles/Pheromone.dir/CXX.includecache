@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/Pheromone_autogen/mocs_compilation.cpp
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/Pheromone.cpp
+Pheromone.h
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/Pheromone.h
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/Pheromone.h
+argos3/core/utility/math/vector2.h
+-
+

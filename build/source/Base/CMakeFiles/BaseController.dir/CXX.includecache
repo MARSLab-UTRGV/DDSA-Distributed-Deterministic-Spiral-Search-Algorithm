@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/BaseController_autogen/mocs_compilation.cpp
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.cpp
+BaseController.h
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.h
+random
+-
+
+/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.h
+argos3/core/utility/logging/argos_log.h
+-
+argos3/core/control_interface/ci_controller.h
+-
+argos3/plugins/robots/generic/control_interface/ci_positioning_sensor.h
+-
+argos3/plugins/robots/generic/control_interface/ci_differential_steering_actuator.h
+-
+argos3/plugins/robots/foot-bot/control_interface/ci_footbot_proximity_sensor.h
+-
+argos3/core/simulator/loop_functions.h
+-
+cmath
+-
+stack
+-
+
