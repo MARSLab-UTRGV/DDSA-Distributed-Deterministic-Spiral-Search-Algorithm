@@ -66,7 +66,7 @@ void DSA_qt_user_functions::DrawNest() {
 
     /* 2d cartesian coordinates of the nest */
     Real x_coordinate = loopFunctions.NestPosition.GetX();
-    Real y_coordinate = loopFunctions.NestPosition.GetX();
+    Real y_coordinate = loopFunctions.NestPosition.GetY();
 
     /* required: leaving this 0.0 will draw the nest inside of the floor */
     Real elevation = loopFunctions.NestElevation;
@@ -75,7 +75,7 @@ void DSA_qt_user_functions::DrawNest() {
     CVector3 nest_3d(x_coordinate, y_coordinate, elevation);
 
     /* Draw the nest on the arena. */
-    DrawCircle(nest_3d, CQuaternion(), loopFunctions.NestRadius, CColor::GRAY50);
+    DrawCircle(nest_3d, CQuaternion(), loopFunctions.NestRadius, CColor::RED);
 }
 
 /*****

@@ -7,7 +7,7 @@
   <!-- ************************* -->
   <framework>
     <system     threads="0" />
-    <experiment length="1800"
+    <experiment length="720"
                 ticks_per_second="32" />
                 
   </framework>
@@ -69,14 +69,14 @@
                   label   = "DSA_loop_functions">
 
 <!-- FoodBoundsWidth & FoodBoundsHeight can be removed. We can compute them #qilu 12/2022 -->
-    <DDSA PrintFinalScore = "1" FoodItemCount = "32" FoodDistribution = "2" NestRadius = "0.2"  SearcherGap = "0.18" />
+    <DDSA PrintFinalScore = "1" FoodItemCount = "256" FoodDistribution = "2" NestRadius = "0.15" RegionRadius="0.08" SearcherGap = "0.18" />
 
   </loop_functions>
         
   <!-- *********************** -->
   <!-- * Arena configuration * -->
   <!-- *********************** -->
-  <arena size="5.0, 5.0, 1" center="0,0,0.5">
+  <arena size="8.0, 8.0, 1" center="0,0,0.5">
 
     <floor id="floor" source="loop_functions" pixels_per_meter="10"/>
 
