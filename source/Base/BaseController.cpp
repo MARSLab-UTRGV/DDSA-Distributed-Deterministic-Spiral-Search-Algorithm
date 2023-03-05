@@ -2,6 +2,7 @@
 #include <random>
 
 using namespace std;
+using namespace argos;
 
 /**
  * Constructor for the BaseController. Several important variables are defined here.
@@ -23,6 +24,8 @@ BaseController::BaseController() :
     heading_to_nest(false),
     DestinationNoiseStdev(0),
     PositionNoiseStdev(0),
+    collision_counter(0),
+	collisionDelay(0),
     RNG(argos::CRandom::CreateRNG("argos"))
 {
     // calculate the forage range and compensate for the robot's radius of 0.085m
@@ -311,6 +314,10 @@ void BaseController::PopMovement() {
 
 }
 
+unsigned int BaseController::GetCollisionTime(){
+ return collision_counter;
+ }
+ 
 bool BaseController::CollisionDetection() {
 
     argos::CVector2 collisionVector = GetCollisionVector();
@@ -337,6 +344,8 @@ bool BaseController::CollisionDetection() {
 	    //argos::LOG << collisionAngle << std::endl << collisionVector << std::endl << std::endl;
             SetRightTurn(37.5 + collisionAngle);
 	  }
+		Real randomNumber = RNG->Uniform(CRange<Real>(0.5, 1.0));
+        collisionDelay = SimulationTick() + (size_t)(randomNumber*SimulationTicksPerSecond());//qilu 02/2023
     }
 
     return isCollisionDetected;
@@ -368,8 +377,8 @@ void BaseController::Stop() {
 void BaseController::Move() {
 
     if(Wait() == true) return;
-
-    CollisionDetection();
+	collisionFlag = CollisionDetection();
+    //CollisionDetection();
     //argos::LOG<<"CurrentMovementState="<<CurrentMovementState<<endl;
     //argos::LOG<<"TicksToWaitWhileMoving="<<TicksToWaitWhileMoving<<endl;
     /* move based on the movement state flag */

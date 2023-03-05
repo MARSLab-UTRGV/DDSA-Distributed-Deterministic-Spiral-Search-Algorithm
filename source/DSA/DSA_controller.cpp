@@ -44,21 +44,21 @@ void DSA_controller::Init(TConfigurationNode& node) {
    // argos::CVector2 p(GetPosition());
     //SetStartPosition(argos::CVector3(p.GetX(), p.GetY(), 0.0));
     
-    m_pcLEDs   = GetActuator<CCI_LEDsActuator>("leds");
-		m_pcLEDs->SetAllColors(CColor::GREEN);
+   // m_pcLEDs   = GetActuator<CCI_LEDsActuator>("leds");
+	//	m_pcLEDs->SetAllColors(CColor::GREEN);
 		controllerID= GetId();//qilu 07/26/2016
 
     RNG = CRandom::CreateRNG("argos");
 	string ID = GetId();
     string ID_number;
-    LOG<<"Robot ID string= "<<ID<<endl;
+    //LOG<<"Robot ID string= "<<ID<<endl;
       
     for(size_t i=1; i< ID.size(); i++){
       ID_number += ID[i];
     }
     RobotID = stoi(ID_number);
 	
-    LOG<<"RobotID number="<<RobotID<<endl;
+    //LOG<<"RobotID number="<<RobotID<<endl;
     //SetStartPosition(argos::CVector3(centers[RobotNumber].GetX(), centers[RobotNumber].GetY(), 0.0));
     TrailColor = CColor(std::rand()%100, std::rand()%150, std::rand()%200, 255); // we avoid the white or nearly white, so we do not mode the random number by 255 
 
@@ -208,6 +208,7 @@ void DSA_controller::ControlStep()
 		//	argos::LOG << "Holding food and drop it" << std::endl;
 	      num_targets_collected++;
 	      loopFunctions->setScore(num_targets_collected);
+		loopFunctions->currNumCollectedFood++;
 	      }
         isHoldingFood = false;
 	  /*

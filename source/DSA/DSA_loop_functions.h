@@ -66,6 +66,13 @@ class DSA_loop_functions : public argos::CLoopFunctions {
 
 		CVector2 NestPosition;
 
+        string FilenameHeader;
+        size_t scoreLastMinute;
+        vector<size_t> foodPerMinute;
+        // size_t numCollisions;
+			 Real curr_time_in_minutes; 
+                Real last_time_in_minutes; 
+
         /* physical robot & world variables */
         argos::Real FoodRadius;
         argos::Real FoodRadiusSquared;
@@ -89,6 +96,12 @@ class DSA_loop_functions : public argos::CLoopFunctions {
         argos::CRange<argos::Real>   ForageRangeX;
         argos::CRange<argos::Real>   ForageRangeY;
 
+                Real   CollisionTime;
+                size_t currCollisionTime; 
+                size_t lastCollisionTime; 
+                size_t lastNumCollectedFood;
+                size_t currNumCollectedFood;
+                size_t Num_robots;
     private:
 
         /* private helper functions */
@@ -102,6 +115,10 @@ class DSA_loop_functions : public argos::CLoopFunctions {
 
 	double score;
 	int PrintFinalScore;
+	
+	vector<CVector2>    regionCenters; //qilu 2/2023
+        vector<CVector2>    topLeftPts; //qilu 2/2023
+        vector<CVector2>    bottomRightPts; //qilu 2/2023
         size_t NumberOfSpirals;
          Real                SearcherGap;
 };

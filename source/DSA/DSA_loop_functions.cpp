@@ -3,6 +3,9 @@
 DSA_loop_functions::DSA_loop_functions() :
 	RNG(argos::CRandom::CreateRNG("argos")),
     //MaxSimTime(3600 * GetSimulator().GetPhysicsEngine("default").GetInverseSimulationClockTick()),
+        CollisionTime(0), 
+        lastNumCollectedFood(0),
+        currNumCollectedFood(0),
     ResourceDensityDelay(0),
     //RandomSeed(GetSimulator().GetRandomSeed()),
     SimCounter(0),
@@ -31,7 +34,9 @@ DSA_loop_functions::DSA_loop_functions() :
   ticks_per_second(0),
   sim_time(0),
   score(0),
-  PrintFinalScore(0)
+  PrintFinalScore(0),
+    FilenameHeader("\0"),
+    scoreLastMinute(0)
 {}
 
 void DSA_loop_functions::Init(TConfigurationNode& node) {
@@ -44,6 +49,7 @@ CSimulator     *simulator     = &GetSimulator();
  argos::GetNodeAttribute(DDSA_node, "FoodItemCount",                  FoodItemCount);
  argos::GetNodeAttribute(DDSA_node, "NestRadius",                 NestRadius);
  argos::GetNodeAttribute(DDSA_node, "SearcherGap",             SearcherGap);
+    argos::GetNodeAttribute(DDSA_node, "FilenameHeader",      FilenameHeader);
  
  NestRadiusSquared = NestRadius*NestRadius;
 
@@ -73,6 +79,7 @@ CSimulator     *simulator     = &GetSimulator();
 	SetFoodDistribution();
 	NumOfRobots = footbots.size();
     generatePattern(NumOfRobots);
+    last_time_in_minutes = 0;
 }
 
 void DSA_loop_functions::generatePattern(int N_robots)
@@ -179,16 +186,65 @@ void DSA_loop_functions::setScore(double s)
 
 void DSA_loop_functions::PostExperiment() 
 {
-  if (PrintFinalScore == 1) 
-  {		printf("Time in seconds, Collected, Distributed, Percentage\n");
-	  printf("%0.2lf, %d, %d, %0.1f\%\n", getSimTimeInSeconds(), (int)score, (int)FoodItemCount, 100*score/FoodItemCount);
-  }
+//   if (PrintFinalScore == 1) 
+//   {		printf("Time(s), Collected, Total, Percentage\n");
+// 	  printf("%0.2lf, \t %d, \t %d, \t %0.1f\%\n", getSimTimeInSeconds(), (int)score, (int)FoodItemCount, 100*score/FoodItemCount);
+//   }
+
+    argos::CSpace::TMapPerType& footbots = GetSpace().GetEntitiesByType("foot-bot");
+    for(argos::CSpace::TMapPerType::iterator it = footbots.begin(); it != footbots.end(); it++) {
+        argos::CFootBotEntity& footBot = *argos::any_cast<argos::CFootBotEntity*>(it->second);
+        BaseController& c = dynamic_cast<BaseController&>(footBot.GetControllableEntity().GetController());
+        DSA_controller& c2 = dynamic_cast<DSA_controller&>(c);
+        CollisionTime += c2.GetCollisionTime();
+    }
+
+    ofstream DataOut((FilenameHeader+"DDSA-D-Data.txt").c_str(), ios::app);
+    if (DataOut.tellp()==0){
+
+        DataOut << "Sim Time(s), Collected, Total, Percentage, Collision Time(s)\n";
+        
+    }
+    DataOut << getSimTimeInSeconds() << "," << (int)score << "," << (int)FoodItemCount << "," << 100*score/FoodItemCount << "," << CollisionTime/(2*ticks_per_second) << endl;
+		DataOut.close();
+	LOG << "Sim Time(s), Collected, Total, Percentage, Collision Time(s)\n";
+    LOG << getSimTimeInSeconds() << "," << (int)score << "," << (int)FoodItemCount << "," << 100*score/FoodItemCount << "%," << CollisionTime/(2*ticks_per_second) << endl;
+   
+    size_t tmp = 0;
+
+    for (size_t fpm : foodPerMinute){
+        tmp += fpm;
+    }
+
+    if (tmp > (int)FoodItemCount){
+        LOGERR << "Total number of collected food items > number of items in the simulation..." << endl;
+        LOGERR << "Number of collected food: " << tmp << ", Number of food in simulation: " << (int)FoodItemCount << endl;
+    }
+
+    // the food collected in the remaining simulation time is discarded if the remaining simulation time < 60 seconds (1 minute)
+    ofstream DataOut2((FilenameHeader+"DDSA-D-TargetsPerMin.txt").c_str(), ios::app);
+    if (DataOut2.tellp()==0){
+		DataOut << "Collected per second\n";
+		}
+    for (size_t fpm : foodPerMinute){
+            DataOut2 << fpm << ",";
+		}
+		DataOut2<<"\n";
+	DataOut2.close();
 }
 
 
 void DSA_loop_functions::PreStep() 
 {
     sim_time++;
+    // get num collected for for each minute
+    curr_time_in_minutes = getSimTimeInSeconds()/60.0;
+    if(curr_time_in_minutes - last_time_in_minutes==1){      
+        LOG << "Minute Passed... getSimTimeInSeconds: " << getSimTimeInSeconds() << ", Food Collected: " << currNumCollectedFood - lastNumCollectedFood << endl;
+        foodPerMinute.push_back(currNumCollectedFood - lastNumCollectedFood);
+        lastNumCollectedFood = currNumCollectedFood;
+        last_time_in_minutes++;
+	}
     if(IdleCount >= NumOfRobots)
     {
       PostExperiment();
