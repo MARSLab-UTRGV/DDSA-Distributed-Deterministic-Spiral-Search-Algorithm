@@ -12,7 +12,8 @@ DSA_controller::DSA_controller() :
     ResetReturnPosition(true),
     stopTimeStep(0),
     m_pcLEDs(NULL),
-    isHoldingFood(false)
+    isHoldingFood(false),
+    num_targets_per_min(0)
 {}
 
 /*****
@@ -205,9 +206,16 @@ void DSA_controller::ControlStep()
 
 	      if (isHoldingFood)
 	      {
-		//	argos::LOG << "Holding food and drop it" << std::endl;
-	      num_targets_collected++;
-	      loopFunctions->setScore(num_targets_collected);
+      //	argos::LOG << "Holding food and drop it" << std::endl;
+          num_targets_collected++;
+          loopFunctions->setScore(num_targets_collected);
+          num_targets_per_min++;
+
+          if (int(loopFunctions->getSimTimeInSeconds())%60==0){
+            loopFunctions->foodPerMinute.push_back(num_targets_per_min);
+            num_targets_per_min = 0;
+          }
+
 	      }
         isHoldingFood = false;
 	  /*

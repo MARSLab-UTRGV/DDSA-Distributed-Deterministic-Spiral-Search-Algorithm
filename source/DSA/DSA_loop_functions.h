@@ -76,6 +76,10 @@ class DSA_loop_functions : public argos::CLoopFunctions {
 
 	argos::Real FoodBoundsWidth;
 	argos::Real FoodBoundsHeight;
+
+        string FilenameHeader;
+        Real CollisionTime;
+        vector<size_t> foodPerMinute;
 	
         /* list variables for food & pheromones */
         std::vector<argos::CVector2> FoodList;

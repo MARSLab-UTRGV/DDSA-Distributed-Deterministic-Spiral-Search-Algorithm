@@ -29,6 +29,8 @@ class BaseController : public argos::CCI_Controller {
         argos::CVector3 GetStartPosition();
         size_t GetMovementState();
 
+        unsigned int GetCollisionTime();//ryan luna 03/2023
+
         void Stop();
         void Move();
         bool Wait();

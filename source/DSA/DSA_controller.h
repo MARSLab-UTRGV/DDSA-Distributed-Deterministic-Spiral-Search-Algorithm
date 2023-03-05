@@ -79,6 +79,8 @@ class DSA_controller : public BaseController {
         size_t              collisionDelay;
 	char direction_last;
 
+        size_t num_targets_per_min;
+
         /* movement functions */
         CDegrees angleInDegrees;
 

@@ -1,31 +1,31 @@
 {
-	"BUILD_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen",
-	"CMAKE_BINARY_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA",
+	"BUILD_DIR" : "/home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ryan/ddsa/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ryan/ddsa/build/source/DSA",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ryan/ddsa/source/DSA",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm",
+	"CMAKE_SOURCE_DIR" : "/home/ryan/ddsa",
 	"HEADERS" : 
 	[
 		[
-			"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.h",
+			"/home/ryan/ddsa/source/DSA/DSA_loop_functions.h",
 			"Mu",
 			"EWIEGA46WW/moc_DSA_loop_functions.cpp"
 		],
 		[
-			"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_qt_user_functions.h",
+			"/home/ryan/ddsa/source/DSA/DSA_qt_user_functions.h",
 			"Mu",
 			"EWIEGA46WW/moc_DSA_qt_user_functions.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"DSA_loop_functions_EXPORTS",
 		"GIT_BRANCH=\"main\"",
-		"GIT_COMMIT_HASH=\"70f9702\"",
+		"GIT_COMMIT_HASH=\"1d24854\"",
 		"GL_SILENCE_DEPRECATION",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
@@ -41,12 +41,12 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA",
-		"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA",
-		"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm",
+		"/home/ryan/ddsa/build/source/DSA",
+		"/home/ryan/ddsa/source/DSA",
+		"/home/ryan/ddsa",
 		"/usr/include/Headers",
 		"/usr/include/lua5.3",
-		"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source",
+		"/home/ryan/ddsa/source",
 		"/usr/include/x86_64-linux-gnu/qt5",
 		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
@@ -71,26 +71,20 @@
 		"-c",
 		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 2,
+	"PARSE_CACHE_FILE" : "/home/ryan/ddsa/build/source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
-	"SETTINGS_FILE" : "/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/ryan/ddsa/build/source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[
-			"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.cpp",
-			"Mu"
-		],
-		[
-			"/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_qt_user_functions.cpp",
-			"Mu"
-		]
+		[ "/home/ryan/ddsa/source/DSA/DSA_loop_functions.cpp", "Mu" ],
+		[ "/home/ryan/ddsa/source/DSA/DSA_qt_user_functions.cpp", "Mu" ]
 	],
 	"VERBOSITY" : 0
 }

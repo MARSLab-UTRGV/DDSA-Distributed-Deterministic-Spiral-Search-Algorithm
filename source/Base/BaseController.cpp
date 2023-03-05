@@ -311,6 +311,10 @@ void BaseController::PopMovement() {
 
 }
 
+unsigned int BaseController::GetCollisionTime(){
+    return collision_counter;
+}
+
 bool BaseController::CollisionDetection() {
 
     argos::CVector2 collisionVector = GetCollisionVector();

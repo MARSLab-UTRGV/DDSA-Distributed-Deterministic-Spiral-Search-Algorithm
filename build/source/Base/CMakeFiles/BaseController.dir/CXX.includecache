@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/BaseController_autogen/mocs_compilation.cpp
+/home/ryan/ddsa/build/source/Base/BaseController_autogen/mocs_compilation.cpp
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.cpp
+/home/ryan/ddsa/source/Base/BaseController.cpp
 BaseController.h
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.h
+/home/ryan/ddsa/source/Base/BaseController.h
 random
 -
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.h
+/home/ryan/ddsa/source/Base/BaseController.h
 argos3/core/utility/logging/argos_log.h
 -
 argos3/core/control_interface/ci_controller.h

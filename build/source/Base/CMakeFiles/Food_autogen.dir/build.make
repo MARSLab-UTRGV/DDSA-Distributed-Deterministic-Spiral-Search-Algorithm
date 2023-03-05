@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 # Utility rule file for Food_autogen.
 
@@ -57,8 +57,8 @@ CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algor
 include source/Base/CMakeFiles/Food_autogen.dir/progress.make
 
 source/Base/CMakeFiles/Food_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target Food"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/cmake -E cmake_autogen /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/CMakeFiles/Food_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target Food"
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/cmake -E cmake_autogen /home/ryan/ddsa/build/source/Base/CMakeFiles/Food_autogen.dir/AutogenInfo.json ""
 
 Food_autogen: source/Base/CMakeFiles/Food_autogen
 Food_autogen: source/Base/CMakeFiles/Food_autogen.dir/build.make
@@ -71,10 +71,10 @@ source/Base/CMakeFiles/Food_autogen.dir/build: Food_autogen
 .PHONY : source/Base/CMakeFiles/Food_autogen.dir/build
 
 source/Base/CMakeFiles/Food_autogen.dir/clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/Food_autogen.dir/cmake_clean.cmake
+	cd /home/ryan/ddsa/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/Food_autogen.dir/cmake_clean.cmake
 .PHONY : source/Base/CMakeFiles/Food_autogen.dir/clean
 
 source/Base/CMakeFiles/Food_autogen.dir/depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/CMakeFiles/Food_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/ddsa /home/ryan/ddsa/source/Base /home/ryan/ddsa/build /home/ryan/ddsa/build/source/Base /home/ryan/ddsa/build/source/Base/CMakeFiles/Food_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/Base/CMakeFiles/Food_autogen.dir/depend
 

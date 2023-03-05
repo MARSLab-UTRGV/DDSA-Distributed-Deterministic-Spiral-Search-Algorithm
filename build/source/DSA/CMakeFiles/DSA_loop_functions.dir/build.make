@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 # Include any dependencies generated for this target.
 include source/DSA/CMakeFiles/DSA_loop_functions.dir/depend.make
@@ -62,42 +62,42 @@ include source/DSA/CMakeFiles/DSA_loop_functions.dir/flags.make
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o: source/DSA/CMakeFiles/DSA_loop_functions.dir/flags.make
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o: source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o -c /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o"
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o -c /home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/ddsa/build/source/DSA/DSA_loop_functions_autogen/mocs_compilation.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o: source/DSA/CMakeFiles/DSA_loop_functions.dir/flags.make
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o: ../source/DSA/DSA_loop_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o -c /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o"
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o -c /home/ryan/ddsa/source/DSA/DSA_loop_functions.cpp
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/ddsa/source/DSA/DSA_loop_functions.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/ddsa/source/DSA/DSA_loop_functions.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o: source/DSA/CMakeFiles/DSA_loop_functions.dir/flags.make
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o: ../source/DSA/DSA_qt_user_functions.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o -c /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_qt_user_functions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o"
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o -c /home/ryan/ddsa/source/DSA/DSA_qt_user_functions.cpp
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_qt_user_functions.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/ddsa/source/DSA/DSA_qt_user_functions.cpp > CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_qt_user_functions.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/ddsa/source/DSA/DSA_qt_user_functions.cpp -o CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s
 
 # Object files for target DSA_loop_functions
 DSA_loop_functions_OBJECTS = \
@@ -145,8 +145,8 @@ source/DSA/libDSA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libXi.so
 source/DSA/libDSA_loop_functions.so: /usr/lib/x86_64-linux-gnu/liblua5.3.so
 source/DSA/libDSA_loop_functions.so: /usr/lib/x86_64-linux-gnu/libm.so
 source/DSA/libDSA_loop_functions.so: source/DSA/CMakeFiles/DSA_loop_functions.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module libDSA_loop_functions.so"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DSA_loop_functions.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared module libDSA_loop_functions.so"
+	cd /home/ryan/ddsa/build/source/DSA && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DSA_loop_functions.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/DSA/CMakeFiles/DSA_loop_functions.dir/build: source/DSA/libDSA_loop_functions.so
@@ -154,10 +154,10 @@ source/DSA/CMakeFiles/DSA_loop_functions.dir/build: source/DSA/libDSA_loop_funct
 .PHONY : source/DSA/CMakeFiles/DSA_loop_functions.dir/build
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && $(CMAKE_COMMAND) -P CMakeFiles/DSA_loop_functions.dir/cmake_clean.cmake
+	cd /home/ryan/ddsa/build/source/DSA && $(CMAKE_COMMAND) -P CMakeFiles/DSA_loop_functions.dir/cmake_clean.cmake
 .PHONY : source/DSA/CMakeFiles/DSA_loop_functions.dir/clean
 
 source/DSA/CMakeFiles/DSA_loop_functions.dir/depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/DSA_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/ddsa /home/ryan/ddsa/source/DSA /home/ryan/ddsa/build /home/ryan/ddsa/build/source/DSA /home/ryan/ddsa/build/source/DSA/CMakeFiles/DSA_loop_functions.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/DSA/CMakeFiles/DSA_loop_functions.dir/depend
 

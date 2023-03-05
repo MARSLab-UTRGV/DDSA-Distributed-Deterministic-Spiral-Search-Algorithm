@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +83,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/CMakeFiles/progress.marks
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles 0
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/ddsa/build/CMakeFiles /home/ryan/ddsa/build/source/Base/CMakeFiles/progress.marks
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/ddsa/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/clean
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +100,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/Base/CMakeFiles/Pheromone.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone.dir/rule
 .PHONY : source/Base/CMakeFiles/Pheromone.dir/rule
 
 # Convenience name for target.
@@ -125,12 +125,12 @@ Pheromone: source/Base/CMakeFiles/Pheromone.dir/rule
 
 # fast build rule for target.
 Pheromone/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/build
 .PHONY : Pheromone/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/Food.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Food.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Food.dir/rule
 .PHONY : source/Base/CMakeFiles/Food.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ Food: source/Base/CMakeFiles/Food.dir/rule
 
 # fast build rule for target.
 Food/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/build
 .PHONY : Food/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/BaseController.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController.dir/rule
 .PHONY : source/Base/CMakeFiles/BaseController.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ BaseController: source/Base/CMakeFiles/BaseController.dir/rule
 
 # fast build rule for target.
 BaseController/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/build
 .PHONY : BaseController/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/Pheromone_autogen.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone_autogen.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Pheromone_autogen.dir/rule
 .PHONY : source/Base/CMakeFiles/Pheromone_autogen.dir/rule
 
 # Convenience name for target.
@@ -170,12 +170,12 @@ Pheromone_autogen: source/Base/CMakeFiles/Pheromone_autogen.dir/rule
 
 # fast build rule for target.
 Pheromone_autogen/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone_autogen.dir/build.make source/Base/CMakeFiles/Pheromone_autogen.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone_autogen.dir/build.make source/Base/CMakeFiles/Pheromone_autogen.dir/build
 .PHONY : Pheromone_autogen/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/Food_autogen.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Food_autogen.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/Food_autogen.dir/rule
 .PHONY : source/Base/CMakeFiles/Food_autogen.dir/rule
 
 # Convenience name for target.
@@ -185,12 +185,12 @@ Food_autogen: source/Base/CMakeFiles/Food_autogen.dir/rule
 
 # fast build rule for target.
 Food_autogen/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food_autogen.dir/build.make source/Base/CMakeFiles/Food_autogen.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food_autogen.dir/build.make source/Base/CMakeFiles/Food_autogen.dir/build
 .PHONY : Food_autogen/fast
 
 # Convenience name for target.
 source/Base/CMakeFiles/BaseController_autogen.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController_autogen.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/Base/CMakeFiles/BaseController_autogen.dir/rule
 .PHONY : source/Base/CMakeFiles/BaseController_autogen.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ BaseController_autogen: source/Base/CMakeFiles/BaseController_autogen.dir/rule
 
 # fast build rule for target.
 BaseController_autogen/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController_autogen.dir/build.make source/Base/CMakeFiles/BaseController_autogen.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController_autogen.dir/build.make source/Base/CMakeFiles/BaseController_autogen.dir/build
 .PHONY : BaseController_autogen/fast
 
 BaseController.o: BaseController.cpp.o
@@ -209,7 +209,7 @@ BaseController.o: BaseController.cpp.o
 
 # target to build an object file
 BaseController.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o
 .PHONY : BaseController.cpp.o
 
 BaseController.i: BaseController.cpp.i
@@ -218,7 +218,7 @@ BaseController.i: BaseController.cpp.i
 
 # target to preprocess a source file
 BaseController.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i
 .PHONY : BaseController.cpp.i
 
 BaseController.s: BaseController.cpp.s
@@ -227,7 +227,7 @@ BaseController.s: BaseController.cpp.s
 
 # target to generate assembly for a file
 BaseController.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s
 .PHONY : BaseController.cpp.s
 
 BaseController_autogen/mocs_compilation.o: BaseController_autogen/mocs_compilation.cpp.o
@@ -236,7 +236,7 @@ BaseController_autogen/mocs_compilation.o: BaseController_autogen/mocs_compilati
 
 # target to build an object file
 BaseController_autogen/mocs_compilation.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o
 .PHONY : BaseController_autogen/mocs_compilation.cpp.o
 
 BaseController_autogen/mocs_compilation.i: BaseController_autogen/mocs_compilation.cpp.i
@@ -245,7 +245,7 @@ BaseController_autogen/mocs_compilation.i: BaseController_autogen/mocs_compilati
 
 # target to preprocess a source file
 BaseController_autogen/mocs_compilation.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i
 .PHONY : BaseController_autogen/mocs_compilation.cpp.i
 
 BaseController_autogen/mocs_compilation.s: BaseController_autogen/mocs_compilation.cpp.s
@@ -254,7 +254,7 @@ BaseController_autogen/mocs_compilation.s: BaseController_autogen/mocs_compilati
 
 # target to generate assembly for a file
 BaseController_autogen/mocs_compilation.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/BaseController.dir/build.make source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s
 .PHONY : BaseController_autogen/mocs_compilation.cpp.s
 
 Food.o: Food.cpp.o
@@ -263,7 +263,7 @@ Food.o: Food.cpp.o
 
 # target to build an object file
 Food.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.o
 .PHONY : Food.cpp.o
 
 Food.i: Food.cpp.i
@@ -272,7 +272,7 @@ Food.i: Food.cpp.i
 
 # target to preprocess a source file
 Food.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.i
 .PHONY : Food.cpp.i
 
 Food.s: Food.cpp.s
@@ -281,7 +281,7 @@ Food.s: Food.cpp.s
 
 # target to generate assembly for a file
 Food.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food.cpp.s
 .PHONY : Food.cpp.s
 
 Food_autogen/mocs_compilation.o: Food_autogen/mocs_compilation.cpp.o
@@ -290,7 +290,7 @@ Food_autogen/mocs_compilation.o: Food_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 Food_autogen/mocs_compilation.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.o
 .PHONY : Food_autogen/mocs_compilation.cpp.o
 
 Food_autogen/mocs_compilation.i: Food_autogen/mocs_compilation.cpp.i
@@ -299,7 +299,7 @@ Food_autogen/mocs_compilation.i: Food_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 Food_autogen/mocs_compilation.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.i
 .PHONY : Food_autogen/mocs_compilation.cpp.i
 
 Food_autogen/mocs_compilation.s: Food_autogen/mocs_compilation.cpp.s
@@ -308,7 +308,7 @@ Food_autogen/mocs_compilation.s: Food_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 Food_autogen/mocs_compilation.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Food.dir/build.make source/Base/CMakeFiles/Food.dir/Food_autogen/mocs_compilation.cpp.s
 .PHONY : Food_autogen/mocs_compilation.cpp.s
 
 Pheromone.o: Pheromone.cpp.o
@@ -317,7 +317,7 @@ Pheromone.o: Pheromone.cpp.o
 
 # target to build an object file
 Pheromone.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.o
 .PHONY : Pheromone.cpp.o
 
 Pheromone.i: Pheromone.cpp.i
@@ -326,7 +326,7 @@ Pheromone.i: Pheromone.cpp.i
 
 # target to preprocess a source file
 Pheromone.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.i
 .PHONY : Pheromone.cpp.i
 
 Pheromone.s: Pheromone.cpp.s
@@ -335,7 +335,7 @@ Pheromone.s: Pheromone.cpp.s
 
 # target to generate assembly for a file
 Pheromone.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone.cpp.s
 .PHONY : Pheromone.cpp.s
 
 Pheromone_autogen/mocs_compilation.o: Pheromone_autogen/mocs_compilation.cpp.o
@@ -344,7 +344,7 @@ Pheromone_autogen/mocs_compilation.o: Pheromone_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 Pheromone_autogen/mocs_compilation.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.o
 .PHONY : Pheromone_autogen/mocs_compilation.cpp.o
 
 Pheromone_autogen/mocs_compilation.i: Pheromone_autogen/mocs_compilation.cpp.i
@@ -353,7 +353,7 @@ Pheromone_autogen/mocs_compilation.i: Pheromone_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 Pheromone_autogen/mocs_compilation.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.i
 .PHONY : Pheromone_autogen/mocs_compilation.cpp.i
 
 Pheromone_autogen/mocs_compilation.s: Pheromone_autogen/mocs_compilation.cpp.s
@@ -362,7 +362,7 @@ Pheromone_autogen/mocs_compilation.s: Pheromone_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 Pheromone_autogen/mocs_compilation.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/Base/CMakeFiles/Pheromone.dir/build.make source/Base/CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.s
 .PHONY : Pheromone_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -408,6 +408,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

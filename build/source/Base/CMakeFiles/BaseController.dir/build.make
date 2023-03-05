@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 # Include any dependencies generated for this target.
 include source/Base/CMakeFiles/BaseController.dir/depend.make
@@ -62,29 +62,29 @@ include source/Base/CMakeFiles/BaseController.dir/flags.make
 
 source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o: source/Base/CMakeFiles/BaseController.dir/flags.make
 source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o: source/Base/BaseController_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o -c /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/BaseController_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o"
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o -c /home/ryan/ddsa/build/source/Base/BaseController_autogen/mocs_compilation.cpp
 
 source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/BaseController_autogen/mocs_compilation.cpp > CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/ddsa/build/source/Base/BaseController_autogen/mocs_compilation.cpp > CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.i
 
 source/Base/CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/BaseController_autogen/mocs_compilation.cpp -o CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/ddsa/build/source/Base/BaseController_autogen/mocs_compilation.cpp -o CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.s
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o: source/Base/CMakeFiles/BaseController.dir/flags.make
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o: ../source/Base/BaseController.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController.cpp.o -c /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.o"
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/BaseController.dir/BaseController.cpp.o -c /home/ryan/ddsa/source/Base/BaseController.cpp
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseController.dir/BaseController.cpp.i"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.cpp > CMakeFiles/BaseController.dir/BaseController.cpp.i
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ryan/ddsa/source/Base/BaseController.cpp > CMakeFiles/BaseController.dir/BaseController.cpp.i
 
 source/Base/CMakeFiles/BaseController.dir/BaseController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseController.dir/BaseController.cpp.s"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base/BaseController.cpp -o CMakeFiles/BaseController.dir/BaseController.cpp.s
+	cd /home/ryan/ddsa/build/source/Base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ryan/ddsa/source/Base/BaseController.cpp -o CMakeFiles/BaseController.dir/BaseController.cpp.s
 
 # Object files for target BaseController
 BaseController_OBJECTS = \
@@ -112,8 +112,8 @@ source/Base/libBaseController.so: /usr/lib/x86_64-linux-gnu/liblua5.3.so
 source/Base/libBaseController.so: /usr/lib/x86_64-linux-gnu/libm.so
 source/Base/libBaseController.so: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 source/Base/libBaseController.so: source/Base/CMakeFiles/BaseController.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libBaseController.so"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BaseController.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libBaseController.so"
+	cd /home/ryan/ddsa/build/source/Base && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BaseController.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/Base/CMakeFiles/BaseController.dir/build: source/Base/libBaseController.so
@@ -121,10 +121,10 @@ source/Base/CMakeFiles/BaseController.dir/build: source/Base/libBaseController.s
 .PHONY : source/Base/CMakeFiles/BaseController.dir/build
 
 source/Base/CMakeFiles/BaseController.dir/clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/BaseController.dir/cmake_clean.cmake
+	cd /home/ryan/ddsa/build/source/Base && $(CMAKE_COMMAND) -P CMakeFiles/BaseController.dir/cmake_clean.cmake
 .PHONY : source/Base/CMakeFiles/BaseController.dir/clean
 
 source/Base/CMakeFiles/BaseController.dir/depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/CMakeFiles/BaseController.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/ddsa /home/ryan/ddsa/source/Base /home/ryan/ddsa/build /home/ryan/ddsa/build/source/Base /home/ryan/ddsa/build/source/Base/CMakeFiles/BaseController.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/Base/CMakeFiles/BaseController.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source
+# Install script for directory: /home/ryan/ddsa/source
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/Base/cmake_install.cmake")
-  include("/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/cmake_install.cmake")
+  include("/home/ryan/ddsa/build/source/Base/cmake_install.cmake")
+  include("/home/ryan/ddsa/build/source/DSA/cmake_install.cmake")
 
 endif()
 

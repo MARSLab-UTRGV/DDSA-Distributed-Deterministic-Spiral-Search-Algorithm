@@ -1,4 +1,4 @@
-# Install script for directory: /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/Base
+# Install script for directory: /home/ryan/ddsa/source/Base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

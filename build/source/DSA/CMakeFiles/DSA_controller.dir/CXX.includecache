@@ -44,13 +44,13 @@ argos3/core/simulator/entity/floor_entity.h
 source/DSA/DSA_controller.h
 -
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/DSA_controller_autogen/mocs_compilation.cpp
+/home/ryan/ddsa/build/source/DSA/DSA_controller_autogen/mocs_compilation.cpp
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_controller.cpp
+/home/ryan/ddsa/source/DSA/DSA_controller.cpp
 DSA_controller.h
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_controller.h
+/home/ryan/ddsa/source/DSA/DSA_controller.h
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_controller.h
+/home/ryan/ddsa/source/DSA/DSA_controller.h
 source/Base/BaseController.h
 -
 source/DSA/DSA_loop_functions.h
@@ -60,13 +60,13 @@ argos3/plugins/robots/generic/control_interface/ci_leds_actuator.h
 cmath
 -
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.cpp
+/home/ryan/ddsa/source/DSA/DSA_loop_functions.cpp
 DSA_loop_functions.h
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.h
+/home/ryan/ddsa/source/DSA/DSA_loop_functions.h
 argos3/plugins/simulator/entities/box_entity.h
 -
 
-/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA/DSA_loop_functions.h
+/home/ryan/ddsa/source/DSA/DSA_loop_functions.h
 argos3/core/simulator/loop_functions.h
 -
 argos3/plugins/robots/foot-bot/simulator/footbot_entity.h

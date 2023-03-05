@@ -46,10 +46,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 # Utility rule file for DSA_controller_autogen.
 
@@ -57,8 +57,8 @@ CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algor
 include source/DSA/CMakeFiles/DSA_controller_autogen.dir/progress.make
 
 source/DSA/CMakeFiles/DSA_controller_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target DSA_controller"
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && /usr/bin/cmake -E cmake_autogen /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/DSA_controller_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ryan/ddsa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target DSA_controller"
+	cd /home/ryan/ddsa/build/source/DSA && /usr/bin/cmake -E cmake_autogen /home/ryan/ddsa/build/source/DSA/CMakeFiles/DSA_controller_autogen.dir/AutogenInfo.json ""
 
 DSA_controller_autogen: source/DSA/CMakeFiles/DSA_controller_autogen
 DSA_controller_autogen: source/DSA/CMakeFiles/DSA_controller_autogen.dir/build.make
@@ -71,10 +71,10 @@ source/DSA/CMakeFiles/DSA_controller_autogen.dir/build: DSA_controller_autogen
 .PHONY : source/DSA/CMakeFiles/DSA_controller_autogen.dir/build
 
 source/DSA/CMakeFiles/DSA_controller_autogen.dir/clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA && $(CMAKE_COMMAND) -P CMakeFiles/DSA_controller_autogen.dir/cmake_clean.cmake
+	cd /home/ryan/ddsa/build/source/DSA && $(CMAKE_COMMAND) -P CMakeFiles/DSA_controller_autogen.dir/cmake_clean.cmake
 .PHONY : source/DSA/CMakeFiles/DSA_controller_autogen.dir/clean
 
 source/DSA/CMakeFiles/DSA_controller_autogen.dir/depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/source/DSA /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/DSA_controller_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ryan/ddsa /home/ryan/ddsa/source/DSA /home/ryan/ddsa/build /home/ryan/ddsa/build/source/DSA /home/ryan/ddsa/build/source/DSA/CMakeFiles/DSA_controller_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : source/DSA/CMakeFiles/DSA_controller_autogen.dir/depend
 

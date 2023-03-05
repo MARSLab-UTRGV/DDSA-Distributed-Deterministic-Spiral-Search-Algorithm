@@ -51,10 +51,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm
+CMAKE_SOURCE_DIR = /home/ryan/ddsa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build
+CMAKE_BINARY_DIR = /home/ryan/ddsa/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,14 +83,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/source/DSA/CMakeFiles/progress.marks
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build/CMakeFiles 0
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/ddsa/build/CMakeFiles /home/ryan/ddsa/build/source/DSA/CMakeFiles/progress.marks
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ryan/ddsa/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/clean
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/clean
 .PHONY : clean
 
 # The main clean target
@@ -100,22 +100,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/preinstall
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/preinstall
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/DSA/CMakeFiles/DSA_controller.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_controller.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_controller.dir/rule
 .PHONY : source/DSA/CMakeFiles/DSA_controller.dir/rule
 
 # Convenience name for target.
@@ -125,12 +125,12 @@ DSA_controller: source/DSA/CMakeFiles/DSA_controller.dir/rule
 
 # fast build rule for target.
 DSA_controller/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/build
 .PHONY : DSA_controller/fast
 
 # Convenience name for target.
 source/DSA/CMakeFiles/DSA_loop_functions.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_loop_functions.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_loop_functions.dir/rule
 .PHONY : source/DSA/CMakeFiles/DSA_loop_functions.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ DSA_loop_functions: source/DSA/CMakeFiles/DSA_loop_functions.dir/rule
 
 # fast build rule for target.
 DSA_loop_functions/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/build
 .PHONY : DSA_loop_functions/fast
 
 # Convenience name for target.
 source/DSA/CMakeFiles/DSA_controller_autogen.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_controller_autogen.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_controller_autogen.dir/rule
 .PHONY : source/DSA/CMakeFiles/DSA_controller_autogen.dir/rule
 
 # Convenience name for target.
@@ -155,12 +155,12 @@ DSA_controller_autogen: source/DSA/CMakeFiles/DSA_controller_autogen.dir/rule
 
 # fast build rule for target.
 DSA_controller_autogen/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller_autogen.dir/build.make source/DSA/CMakeFiles/DSA_controller_autogen.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller_autogen.dir/build.make source/DSA/CMakeFiles/DSA_controller_autogen.dir/build
 .PHONY : DSA_controller_autogen/fast
 
 # Convenience name for target.
 source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/rule:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/rule
+	cd /home/ryan/ddsa/build && $(MAKE) -f CMakeFiles/Makefile2 source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/rule
 .PHONY : source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/rule
 
 # Convenience name for target.
@@ -170,7 +170,7 @@ DSA_loop_functions_autogen: source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir
 
 # fast build rule for target.
 DSA_loop_functions_autogen/fast:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/build
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions_autogen.dir/build
 .PHONY : DSA_loop_functions_autogen/fast
 
 DSA_controller.o: DSA_controller.cpp.o
@@ -179,7 +179,7 @@ DSA_controller.o: DSA_controller.cpp.o
 
 # target to build an object file
 DSA_controller.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.o
 .PHONY : DSA_controller.cpp.o
 
 DSA_controller.i: DSA_controller.cpp.i
@@ -188,7 +188,7 @@ DSA_controller.i: DSA_controller.cpp.i
 
 # target to preprocess a source file
 DSA_controller.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.i
 .PHONY : DSA_controller.cpp.i
 
 DSA_controller.s: DSA_controller.cpp.s
@@ -197,7 +197,7 @@ DSA_controller.s: DSA_controller.cpp.s
 
 # target to generate assembly for a file
 DSA_controller.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller.cpp.s
 .PHONY : DSA_controller.cpp.s
 
 DSA_controller_autogen/mocs_compilation.o: DSA_controller_autogen/mocs_compilation.cpp.o
@@ -206,7 +206,7 @@ DSA_controller_autogen/mocs_compilation.o: DSA_controller_autogen/mocs_compilati
 
 # target to build an object file
 DSA_controller_autogen/mocs_compilation.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.o
 .PHONY : DSA_controller_autogen/mocs_compilation.cpp.o
 
 DSA_controller_autogen/mocs_compilation.i: DSA_controller_autogen/mocs_compilation.cpp.i
@@ -215,7 +215,7 @@ DSA_controller_autogen/mocs_compilation.i: DSA_controller_autogen/mocs_compilati
 
 # target to preprocess a source file
 DSA_controller_autogen/mocs_compilation.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.i
 .PHONY : DSA_controller_autogen/mocs_compilation.cpp.i
 
 DSA_controller_autogen/mocs_compilation.s: DSA_controller_autogen/mocs_compilation.cpp.s
@@ -224,7 +224,7 @@ DSA_controller_autogen/mocs_compilation.s: DSA_controller_autogen/mocs_compilati
 
 # target to generate assembly for a file
 DSA_controller_autogen/mocs_compilation.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.s
 .PHONY : DSA_controller_autogen/mocs_compilation.cpp.s
 
 DSA_loop_functions.o: DSA_loop_functions.cpp.o
@@ -233,8 +233,8 @@ DSA_loop_functions.o: DSA_loop_functions.cpp.o
 
 # target to build an object file
 DSA_loop_functions.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.o
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.o
 .PHONY : DSA_loop_functions.cpp.o
 
 DSA_loop_functions.i: DSA_loop_functions.cpp.i
@@ -243,8 +243,8 @@ DSA_loop_functions.i: DSA_loop_functions.cpp.i
 
 # target to preprocess a source file
 DSA_loop_functions.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.i
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.i
 .PHONY : DSA_loop_functions.cpp.i
 
 DSA_loop_functions.s: DSA_loop_functions.cpp.s
@@ -253,8 +253,8 @@ DSA_loop_functions.s: DSA_loop_functions.cpp.s
 
 # target to generate assembly for a file
 DSA_loop_functions.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.s
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_controller.dir/build.make source/DSA/CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions.cpp.s
 .PHONY : DSA_loop_functions.cpp.s
 
 DSA_loop_functions_autogen/mocs_compilation.o: DSA_loop_functions_autogen/mocs_compilation.cpp.o
@@ -263,7 +263,7 @@ DSA_loop_functions_autogen/mocs_compilation.o: DSA_loop_functions_autogen/mocs_c
 
 # target to build an object file
 DSA_loop_functions_autogen/mocs_compilation.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.o
 .PHONY : DSA_loop_functions_autogen/mocs_compilation.cpp.o
 
 DSA_loop_functions_autogen/mocs_compilation.i: DSA_loop_functions_autogen/mocs_compilation.cpp.i
@@ -272,7 +272,7 @@ DSA_loop_functions_autogen/mocs_compilation.i: DSA_loop_functions_autogen/mocs_c
 
 # target to preprocess a source file
 DSA_loop_functions_autogen/mocs_compilation.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.i
 .PHONY : DSA_loop_functions_autogen/mocs_compilation.cpp.i
 
 DSA_loop_functions_autogen/mocs_compilation.s: DSA_loop_functions_autogen/mocs_compilation.cpp.s
@@ -281,7 +281,7 @@ DSA_loop_functions_autogen/mocs_compilation.s: DSA_loop_functions_autogen/mocs_c
 
 # target to generate assembly for a file
 DSA_loop_functions_autogen/mocs_compilation.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_loop_functions_autogen/mocs_compilation.cpp.s
 .PHONY : DSA_loop_functions_autogen/mocs_compilation.cpp.s
 
 DSA_qt_user_functions.o: DSA_qt_user_functions.cpp.o
@@ -290,7 +290,7 @@ DSA_qt_user_functions.o: DSA_qt_user_functions.cpp.o
 
 # target to build an object file
 DSA_qt_user_functions.cpp.o:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.o
 .PHONY : DSA_qt_user_functions.cpp.o
 
 DSA_qt_user_functions.i: DSA_qt_user_functions.cpp.i
@@ -299,7 +299,7 @@ DSA_qt_user_functions.i: DSA_qt_user_functions.cpp.i
 
 # target to preprocess a source file
 DSA_qt_user_functions.cpp.i:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.i
 .PHONY : DSA_qt_user_functions.cpp.i
 
 DSA_qt_user_functions.s: DSA_qt_user_functions.cpp.s
@@ -308,7 +308,7 @@ DSA_qt_user_functions.s: DSA_qt_user_functions.cpp.s
 
 # target to generate assembly for a file
 DSA_qt_user_functions.cpp.s:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s
+	cd /home/ryan/ddsa/build && $(MAKE) -f source/DSA/CMakeFiles/DSA_loop_functions.dir/build.make source/DSA/CMakeFiles/DSA_loop_functions.dir/DSA_qt_user_functions.cpp.s
 .PHONY : DSA_qt_user_functions.cpp.s
 
 # Help Target
@@ -349,6 +349,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/luki/DDSA-Distributed-Deterministic-Spiral-Search-Algorithm/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ryan/ddsa/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
