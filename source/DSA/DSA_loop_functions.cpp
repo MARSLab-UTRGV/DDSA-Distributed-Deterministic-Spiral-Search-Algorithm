@@ -33,7 +33,8 @@ DSA_loop_functions::DSA_loop_functions() :
     score(0),
     PrintFinalScore(0),
     FilenameHeader("\0"),
-    CollisionTime(0)
+    CollisionTime(0),
+    scoreLastMinute(0)
 {}
 
 void DSA_loop_functions::Init(TConfigurationNode& node) {
@@ -227,6 +228,17 @@ void DSA_loop_functions::PostExperiment()
 void DSA_loop_functions::PreStep() 
 {
     sim_time++;
+
+    // get num collected for for each minute
+    size_t FoodThisMinute;
+    // Real min = 60.0;
+    if (int(getSimTimeInSeconds())%60 == 0 && sim_time % ticks_per_second == 0){
+        FoodThisMinute = score - scoreLastMinute;
+        scoreLastMinute = score;
+        foodPerMinute.push_back(FoodThisMinute);
+        LOG << "Minute Passed... getSimTimeInSeconds: " << getSimTimeInSeconds() << ", Food Collected: " << FoodThisMinute << endl;
+    }
+
     if(IdleCount >= NumOfRobots)
     {
       PostExperiment();

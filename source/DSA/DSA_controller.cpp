@@ -209,12 +209,12 @@ void DSA_controller::ControlStep()
       //	argos::LOG << "Holding food and drop it" << std::endl;
           num_targets_collected++;
           loopFunctions->setScore(num_targets_collected);
-          num_targets_per_min++;
+          // num_targets_per_min++;
 
-          if (int(loopFunctions->getSimTimeInSeconds())%60==0){
-            loopFunctions->foodPerMinute.push_back(num_targets_per_min);
-            num_targets_per_min = 0;
-          }
+          // if (int(loopFunctions->getSimTimeInSeconds())%60==0){
+          //   loopFunctions->foodPerMinute.push_back(num_targets_per_min);
+          //   num_targets_per_min = 0;
+          // }
 
 	      }
         isHoldingFood = false;

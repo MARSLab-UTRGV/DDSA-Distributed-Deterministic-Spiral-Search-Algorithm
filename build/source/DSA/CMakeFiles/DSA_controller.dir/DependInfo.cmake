@@ -13,8 +13,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "DSA_controller_EXPORTS"
-  "GIT_BRANCH=\"main\""
-  "GIT_COMMIT_HASH=\"1d24854\""
+  "GIT_BRANCH=\"ryan-dev\""
+  "GIT_COMMIT_HASH=\"1184712\""
   "GL_SILENCE_DEPRECATION"
   "QT_CORE_LIB"
   "QT_GUI_LIB"

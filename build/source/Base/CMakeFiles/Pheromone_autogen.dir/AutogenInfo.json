@@ -18,8 +18,8 @@
 	"MOC_COMPILATION_FILE" : "/home/ryan/ddsa/build/source/Base/Pheromone_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
-		"GIT_BRANCH=\"main\"",
-		"GIT_COMMIT_HASH=\"1d24854\"",
+		"GIT_BRANCH=\"ryan-dev\"",
+		"GIT_COMMIT_HASH=\"1184712\"",
 		"GL_SILENCE_DEPRECATION",
 		"Pheromone_EXPORTS",
 		"QT_CORE_LIB",

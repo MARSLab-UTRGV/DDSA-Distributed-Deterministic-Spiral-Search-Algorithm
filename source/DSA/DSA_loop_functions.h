@@ -80,6 +80,7 @@ class DSA_loop_functions : public argos::CLoopFunctions {
         string FilenameHeader;
         Real CollisionTime;
         vector<size_t> foodPerMinute;
+        size_t scoreLastMinute;
 	
         /* list variables for food & pheromones */
         std::vector<argos::CVector2> FoodList;
