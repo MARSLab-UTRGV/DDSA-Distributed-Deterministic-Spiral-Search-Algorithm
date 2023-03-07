@@ -3,7 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/BaseController_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/BaseController_autogen.dir/ParseCache.txt"
   "CMakeFiles/BaseController.dir/BaseController.cpp.o"
+  "CMakeFiles/BaseController.dir/BaseController.cpp.o.d"
   "CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/BaseController.dir/BaseController_autogen/mocs_compilation.cpp.o.d"
   "libBaseController.pdb"
   "libBaseController.so"
 )

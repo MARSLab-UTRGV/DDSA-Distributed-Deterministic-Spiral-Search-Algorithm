@@ -3,7 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Pheromone_autogen.dir/ParseCache.txt"
   "Pheromone_autogen"
   "CMakeFiles/Pheromone.dir/Pheromone.cpp.o"
+  "CMakeFiles/Pheromone.dir/Pheromone.cpp.o.d"
   "CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/Pheromone.dir/Pheromone_autogen/mocs_compilation.cpp.o.d"
   "libPheromone.pdb"
   "libPheromone.so"
 )
