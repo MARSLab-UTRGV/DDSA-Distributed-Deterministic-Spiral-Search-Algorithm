@@ -59,7 +59,7 @@ class DSA_controller : public BaseController {
         CColor              TrailColor;
 
 	Real                ProbTargetDetection;
-        Real                SearcherGap;
+        Real                SpiralGap;
         Real                FoodDistanceTolerance;
         Real                SquaredFoodDistanceTolerance;
        	CVector2            previous_position;

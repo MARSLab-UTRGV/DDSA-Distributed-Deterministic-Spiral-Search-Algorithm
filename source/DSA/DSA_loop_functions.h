@@ -120,7 +120,7 @@ class DSA_loop_functions : public argos::CLoopFunctions {
         vector<CVector2>    topLeftPts; //qilu 2/2023
         vector<CVector2>    bottomRightPts; //qilu 2/2023
         size_t NumberOfSpirals;
-         Real                SearcherGap;
+         Real                SpiralGap;
 };
 
 #endif /* DSA_LOOP_FUNCTIONS_H */

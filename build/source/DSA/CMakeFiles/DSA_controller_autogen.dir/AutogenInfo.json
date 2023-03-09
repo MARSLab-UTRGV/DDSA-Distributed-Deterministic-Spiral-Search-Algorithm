@@ -33,7 +33,7 @@
 	[
 		"DSA_controller_EXPORTS",
 		"GIT_BRANCH=\"luki-dev\"",
-		"GIT_COMMIT_HASH=\"f6d969a\"",
+		"GIT_COMMIT_HASH=\"f3ad089\"",
 		"GL_SILENCE_DEPRECATION",
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",

@@ -90,7 +90,7 @@ void DSA_controller::Init(TConfigurationNode& node) {
 		       << "NumberOfSpirals, "
 		       << "TargetDistanceTolerance, "
 		       << "TargetAngleTolerance, "
-		       << "SearcherGap, "
+		       << "SpiralGap, "
 		       << "FoodDistanceTolerance, "
 		       << "RobotForwardSpeed, "
 		       << "RobotRotationSpeed, "
@@ -99,7 +99,7 @@ void DSA_controller::Init(TConfigurationNode& node) {
 		       << NumberOfSpirals << ", "
 		       << TargetDistanceTolerance << ", "
 		       << TargetAngleTolerance << ", "
-		       << SearcherGap << ", "
+		       << SpiralGap << ", "
 		       << FoodDistanceTolerance << ", "
 		       << RobotForwardSpeed << ", "
 		       << RobotRotationSpeed << ", "
@@ -259,7 +259,7 @@ void DSA_controller::SetTargetN(char x)
 {
     CVector2 position = GetTarget();
     SetIsHeadingToNest(false);
-    SetTarget(CVector2(position.GetX()+loopFunctions->SearcherGap,position.GetY()));
+    SetTarget(CVector2(position.GetX()+loopFunctions->SpiralGap,position.GetY()));
 }
 
 /*****
@@ -268,7 +268,7 @@ void DSA_controller::SetTargetN(char x)
 void DSA_controller::SetTargetS(char x){
     CVector2 position = GetTarget();
     SetIsHeadingToNest(false);
-    SetTarget(CVector2(position.GetX()-loopFunctions->SearcherGap,position.GetY()));
+    SetTarget(CVector2(position.GetX()-loopFunctions->SpiralGap,position.GetY()));
 }
 
 /*****
@@ -277,7 +277,7 @@ void DSA_controller::SetTargetS(char x){
 void DSA_controller::SetTargetE(char x){
    CVector2 position = GetTarget();
    SetIsHeadingToNest(false);
-   SetTarget(CVector2(position.GetX(),position.GetY()-loopFunctions->SearcherGap));
+   SetTarget(CVector2(position.GetX(),position.GetY()-loopFunctions->SpiralGap));
 }
 
 /*****
@@ -286,7 +286,7 @@ void DSA_controller::SetTargetE(char x){
 void DSA_controller::SetTargetW(char x){
     CVector2 position = GetTarget();
     SetIsHeadingToNest(false);
-    SetTarget(CVector2(position.GetX(),position.GetY()+loopFunctions->SearcherGap));
+    SetTarget(CVector2(position.GetX(),position.GetY()+loopFunctions->SpiralGap));
 }
 
 /*****

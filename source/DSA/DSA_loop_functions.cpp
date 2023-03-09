@@ -7,7 +7,7 @@ DSA_loop_functions::DSA_loop_functions() :
         lastNumCollectedFood(0),
         currNumCollectedFood(0),
     ResourceDensityDelay(0),
-    //RandomSeed(GetSimulator().GetRandomSeed()),
+    RandomSeed(GetSimulator().GetRandomSeed()),
     SimCounter(0),
     MaxSimCounter(1),
     VariableFoodPlacement(0),
@@ -19,7 +19,6 @@ DSA_loop_functions::DSA_loop_functions() :
     IdleCount(0),
     DrawTargetRays(0),
     FoodDistribution(1),
-//    FoodDistribution(9),
     FoodItemCount(256),
     NumberOfClusters(4),
     ClusterWidthX(8),
@@ -48,7 +47,7 @@ CSimulator     *simulator     = &GetSimulator();
  argos::GetNodeAttribute(DDSA_node, "FoodDistribution",                  FoodDistribution);
  argos::GetNodeAttribute(DDSA_node, "FoodItemCount",                  FoodItemCount);
  argos::GetNodeAttribute(DDSA_node, "NestRadius",                 NestRadius);
- argos::GetNodeAttribute(DDSA_node, "SearcherGap",             SearcherGap);
+	argos::GetNodeAttribute(DDSA_node, "SpiralGap",         SpiralGap);
     argos::GetNodeAttribute(DDSA_node, "FilenameHeader",      FilenameHeader);
  
  NestRadiusSquared = NestRadius*NestRadius;
@@ -202,14 +201,13 @@ void DSA_loop_functions::PostExperiment()
     ofstream DataOut((FilenameHeader+"DDSA-D-Data.txt").c_str(), ios::app);
     if (DataOut.tellp()==0){
 
-        DataOut << "Sim Time(s), Collected, Total, Percentage, Collision Time(s)\n";
+        DataOut << "SimT(s), Bots, Collected, Total, Collision Time(s), Percentage\n";
         
     }
-    DataOut << getSimTimeInSeconds() << "," << (int)score << "," << (int)FoodItemCount << "," << 100*score/FoodItemCount << "," << CollisionTime/(2*ticks_per_second) << endl;
+    DataOut << getSimTimeInSeconds() << ",   	" << (int)NumOfRobots <<",  "<< (int)score << ",	" << (int)FoodItemCount  << ",	" << CollisionTime/(2*ticks_per_second) << ",	" << 100*score/FoodItemCount << endl;
 		DataOut.close();
-	LOG << "Sim Time(s), Collected, Total, Percentage, Collision Time(s)\n";
-    LOG << getSimTimeInSeconds() << "," << (int)score << "," << (int)FoodItemCount << "," << 100*score/FoodItemCount << "%," << CollisionTime/(2*ticks_per_second) << endl;
-   
+	LOG << "Sim Time(s), Bots, Collected, Total, Collision Time(s), Percentage\n";
+    LOG << getSimTimeInSeconds() << ",   " << (int)NumOfRobots << ",  " << (int)score << ",		" << (int)FoodItemCount << ",		"  << CollisionTime/(2*ticks_per_second)<< ",	" << 100*score/FoodItemCount << "%" << endl;
     size_t tmp = 0;
 
     for (size_t fpm : foodPerMinute){
@@ -245,11 +243,11 @@ void DSA_loop_functions::PreStep()
         lastNumCollectedFood = currNumCollectedFood;
         last_time_in_minutes++;
 	}
-    if(IdleCount >= NumOfRobots)
+   /* if(IdleCount >= NumOfRobots)
     {
       PostExperiment();
       exit(0);
-    }
+    }*/
 }
 
 argos::Real DSA_loop_functions::getSimTimeInSeconds()

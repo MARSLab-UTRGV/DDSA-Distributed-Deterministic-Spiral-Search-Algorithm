@@ -26,7 +26,7 @@
 	"MOC_DEFINITIONS" : 
 	[
 		"GIT_BRANCH=\"luki-dev\"",
-		"GIT_COMMIT_HASH=\"f6d969a\"",
+		"GIT_COMMIT_HASH=\"f3ad089\"",
 		"GL_SILENCE_DEPRECATION",
 		"Pheromone_EXPORTS",
 		"QT_CORE_LIB",

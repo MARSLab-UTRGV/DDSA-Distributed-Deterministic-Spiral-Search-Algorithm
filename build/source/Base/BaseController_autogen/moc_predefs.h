@@ -12,7 +12,7 @@
 #define __SIZEOF_FLOAT80__ 16
 #define __INTMAX_C(c) c ## L
 #define __CHAR_BIT__ 8
-#define GIT_COMMIT_HASH "f6d969a"
+#define GIT_COMMIT_HASH "f3ad089"
 #define __UINT8_MAX__ 0xff
 #define __SCHAR_WIDTH__ 8
 #define __WINT_MAX__ 0xffffffffU
