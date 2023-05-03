@@ -3,11 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DSA_controller_autogen.dir/ParseCache.txt"
   "DSA_controller_autogen"
   "CMakeFiles/DSA_controller.dir/DSA_controller.cpp.o"
-  "CMakeFiles/DSA_controller.dir/DSA_controller.cpp.o.d"
   "CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.o"
-  "CMakeFiles/DSA_controller.dir/DSA_controller_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.o"
-  "CMakeFiles/DSA_controller.dir/DSA_loop_functions.cpp.o.d"
   "libDSA_controller.pdb"
   "libDSA_controller.so"
 )
